@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe - 个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Joe</div>
+            <ul>
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#ai-chat">AI对话</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>欢迎来到我的世界</h1>
+            <p>探索、创新、成长</p>
+            <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+        </section>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <img src="./imgs/人生照片.jpg" alt="Joe" class="profile-photo">
+                <div class="about-text">
+                    <p>这里是您的简洁介绍。描述您的背景、专长和目标。</p>
+                    <p>突出您的核心优势和独特之处。</p>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill"><i class="fas fa-code"></i> 编程</div>
+                <div class="skill"><i class="fas fa-paint-brush"></i> 设计</div>
+                <div class="skill"><i class="fas fa-chart-line"></i> 分析</div>
+            </div>
+        </section>
+
+        <section id="ai-chat">
+            <h2>AI助手对话</h2>
+            <p>与我的AI助手进行对话，探索更多可能性。</p>
+            <div id="chat-container">
+                <div id="chat-output"></div>
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="输入您的问题...">
+                    <button type="submit">发送</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系我</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="您的姓名" required>
+                <input type="email" placeholder="您的邮箱" required>
+                <textarea placeholder="您的消息" required></textarea>
+                <button type="submit">发送消息</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a>
+            <a href="#"><i class="fab fa-weixin"></i> WeChat: YourWeChatID</a>
+        </div>
+        <p>&copy; 2023 Joe. 保留所有权利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
